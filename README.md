@@ -17,3 +17,15 @@ To install the dependencies
 
 ### Material - ui
 React components for faster and easier web development. Build your own design system, or start with Material Design.
+
+### Axios
+HTTP client for the browser 
+
+### Chart js
+Simple yet flexible JavaScript charting for designers & developers
+
+### React count up
+This component will simulate realtime count up
+
+### ClassNames
+A simple JavaScript utility for conditionally joining classNames together.
