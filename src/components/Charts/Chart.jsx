@@ -13,8 +13,6 @@ const Chart = () => {
     const getDailyData = async() => {
         setDailyData(await fetchDailyData())
     }
-
-    console.error(dailyData)
     
     const lineChart = (
         dailyData.length ?
