@@ -15,7 +15,7 @@ const OneCard = ({ title, number, date, text, barColor }) => {
                 <CountUp start={0} end={ number } duration={ 1 } separator=" "/>
             </Typography>
             <Typography color="textSecondary">
-                { date }
+                { new Date(date).toDateString() }
             </Typography>
             <Typography variant="body2" component="p">
                 { text }

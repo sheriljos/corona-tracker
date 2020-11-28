@@ -10,7 +10,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate }}) => {
 
     return(
         <Grid container justify="center" alignItems="center">
-            <Grid>
+            <Grid item xs={ 12 } md={ 3 }>
                 <OneCard 
                     title={ "Infected" }
                     number= { confirmed.value }
@@ -19,7 +19,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate }}) => {
                     barColor={ "purple" }
                 />
             </Grid>
-            <Grid>
+            <Grid item xs={ 12 } md={ 3 }>
                 <OneCard 
                     title={ "Recovered" }
                     number= { recovered.value }
@@ -28,7 +28,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate }}) => {
                     barColor={ "green" }
                 />
             </Grid>
-            <Grid>
+            <Grid item xs={ 12 } md={ 3 }>
                 <OneCard 
                     title={ "Deaths" }
                     number= { deaths.value }
