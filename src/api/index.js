@@ -1,11 +1,11 @@
-import fetch from 'axios';
+import Axios from 'axios';
 
 // Exported like a variable
 export const fetchData = async () => {
     const URL = 'https://covid19.mathdro.id/api';
 
     try {
-        const { data: { confirmed, recovered, deaths, lastUpdate } } = await fetch(URL);
+        const { data: { confirmed, recovered, deaths, lastUpdate } } = await Axios.get(URL);
 
         return { 
             confirmed,
@@ -13,6 +13,19 @@ export const fetchData = async () => {
             deaths,
             lastUpdate 
         };
+    } catch (error) {
+        console.error('error occured')
+    }
+}
+
+
+export const fetchDailyData = async () => {
+    const URL = 'https://covid19.mathdro.id/api/daily';
+
+    try {
+        const { data } = await Axios.get(URL);
+
+        return data;
     } catch (error) {
         console.error('error occured')
     }
