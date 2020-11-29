@@ -30,3 +30,15 @@ export const fetchDailyData = async () => {
         console.error('error occured')
     }
 }
+
+export const fetchCountries = async ()  => {
+    const URL = 'https://covid19.mathdro.id/api/countries';
+
+    try {
+        const { countries } = await Axios.get(URL);
+
+        return countries;
+    } catch (error) {
+        console.error('error occured in fetching countries')
+    }
+}
