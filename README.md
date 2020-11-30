@@ -1,5 +1,6 @@
 ## About the project
-The project will track the corona cases happening
+The project will track the corona cases. It gives the overall and country specific data for infected, recovered and death cases.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

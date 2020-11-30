@@ -34,8 +34,6 @@ const Charts = () => {
     }, []);
     // Empty array makes sure that call is made only during mount
 
-    console.log(dailyData)
-
     return(
         <div className={ styles.topPadding }>
             <Line
