@@ -21,7 +21,8 @@ function chartData(labels, confirmed, deaths) {
     }
   }
 
-const Charts = () => {
+const Charts = ( { data, country }) => {
+  console.log(data)
    const [dailyData, setDailyData] = useState([]);
 
     // Similar to componentDidMount and componentDidUpdate:
