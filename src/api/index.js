@@ -8,8 +8,6 @@ export const fetchData = async ( country="") => {
         URL = `${URL}/countries/${country}`;        
     }
 
-    console.log(country)
-
     try {
         const { data: { confirmed, recovered, deaths, lastUpdate } } = await Axios.get(URL);
 
